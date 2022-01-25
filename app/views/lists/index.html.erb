@@ -21,8 +21,7 @@
               <a class="dropdown-item" href="#">Another action</a>
             </div>
           </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
+
       </ul>
     </div>
   </div>
@@ -38,29 +37,10 @@
 </div>
 
 <div class="cards m-3">
+  <% @lists.each do |list|%>
    <div class="card-category"
     style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1523712900580-a5cc2e0112ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)">
-    Thriller
+    <%= list.name %>
   </div>
-
-  <div class="card-category"
-    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://media.istockphoto.com/photos/dramatic-stormy-dark-cloudy-sky-over-sea-picture-id522305524?k=20&m=522305524&s=612x612&w=0&h=NKzaiOfoO23N8q--p2DTJQwSfPZ0yYnoS93NQjP5QkA=">
-    Drama
-  </div>
-
-  <div class="card-category"
-    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80)">
-    Action
-  </div>
-
-  <div class="card-category"
-  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://media.istockphoto.com/photos/fuunny-overweight-retro-swimmer-about-to-jump-into-the-ice-hole-picture-id1318979684?k=20&m=1318979684&s=612x612&w=0&h=aQSVP-zDHNxQ-KkOqx9x8MUU2r9_5JThK9B1FLAjqDA=)">
-  Comedy
-  </div>
+  <% end %>
 </div>
-
-
-
-<%# <% @lists.each do |list| %>
- <%# <%= list.name %>
-<%# <% end %>
