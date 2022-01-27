@@ -40,9 +40,9 @@
   <% @lists.each do |list|%>
    <div class="card-category"
     style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1523712900580-a5cc2e0112ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)">
-    <%= list.name %>
+    <%= link_to list.name, list_path(list) %>
   </div>
   <% end %>
 </div>
 <%# <%= cl_image_tag("dketpsvtqbal8ugppmsg",
-      width: 400, height: 300, crop: :fill) %> %>
+      width: 400, height: 300, crop: :fill) %>
